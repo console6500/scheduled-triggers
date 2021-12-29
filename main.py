@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import logging
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='%(levelname)s:     %(message)s')
 
 app = FastAPI(title="backend")
 
