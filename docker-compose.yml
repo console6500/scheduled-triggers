@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  backend:
+    image: super-amazing-web-app
+    container_name: super-amazing-web-app
+    ports:
+      - '9000:9000'
+    volumes:
+      - ./main.py:/main.py
+    networks:
+      default:
+networks:
+  default:
+    name: super-amazing-web-app-network
